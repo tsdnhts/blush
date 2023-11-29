@@ -1,0 +1,14 @@
+.main {
+    margin: 0px auto 0px auto;
+    max-width: 600px;
+}
+.sparta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sparta img{
+    width: 350px;
+}
