@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멤버소개</title>
+    <link rel="stylesheet" href="asset/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module">
+        $('#first-member').click(async function () {
+            window.open("");
+        });
+
+        $('#second-member').click(async function () {
+            window.open("");
+        });
+
+        $('#third-member').click(async function () {
+            window.open("");
+        });
+        $('#fourth-member').click(async function () {
+            window.open("keyword.html");
+        });
+    </script>
+    <style>
+        /* 상단 제목 */
+        .intro-container {
+            height: 150px;
+            margin: 50px auto 30px auto;
+        }
+
+        .intro-container>h1 {
+            font-size: 52px;
+            font-weight: bold;
+        }
+
+        .intro-container>h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .intro-container>h1,
+        .intro-container>h2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 프로필 사진 */
+        .member-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .members {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .member {
+            margin: 0 5px;
+            transition: all .4s;
+            opacity: 0.75;
+        }
+
+        .member:hover {
+            margin: 0 20px;
+            opacity: 1;
+        }
+
+        .profile {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile:before {
+            position: absolute;
+            background: rgb(255, 255, 255);
+
+            background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+
+            content: ' ';
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .profile img {
+            width: 300px;
+            height: 400px;
+        }
+
+        .profile-contents {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 10px;
+        }
+
+        .profile-contents h2 {
+            font-size: 24px;
+        }
+
+        .profile-contents h2 span {
+            display: block;
+            font-size: 16px;
+        }
+
+        .profile-contents p {
+            color: white;
+            font-size: 12px;
+            max-height: 0;
+            overflow: hidden;
+            line-height: 1.2;
+            transition: all 1s;
+        }
+
+        .member:hover .profile-contents p {
+            opacity: 1;
+            max-height: 6em;
+            margin-top: 0.4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro-container">
+        <h1>홍조의 멤버들을 소개합니다!</h1>
+        <h2>프로필 사진을 클릭하면 각 멤버들의 개인 페이지로 이동합니다.</h2>
+    </div>
+    <div class="member-container">
+        <ul class="members">
+            <li class="member">
+                <div class="profile profile_red" style="color:pink;" id="first-member">
+                    <img src="asset/img">
+                    <div class="profile-contents">
+                        <h2>장준용 <span>ISTJ</span></h2>
+                        <p>좋아하는 음식: 치킨<br>가고싶은 여행지: 일본<br>재밌게 본 영화: 인터스텔라<br>나의 장점: 적응력이 좋다!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="member">
+                <div class="profile profile_beige" style="color:orange;" id="second-member">
+                    <img src="asset/img">
+                    <div class="profile-contents">
+                        <h2>이용훈 <span>INFJ</span></h2>
+                        <p>좋아하는 음식: 돈카츠<br>가고싶은 여행지: 터키<br>재밌게 본 영화: 그대들은 어떻게 살 것인가<br>나의 장점: 실행력이 좋다!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="member">
+                <div class="profile profile_green" style="color:greenyellow;" id="third-member">
+                    <img src="asset/img">
+                    <div class="profile-contents">
+                        <h2>이 율 <span>INTP</span></h2>
+                        <p>좋아하는 음식: 샤브샤브<br>가고싶은 여행지: 리스본 호카곶<br>재밌게 본 영화: 오만과 편견<br>나의 장점: 긍정적이고 힘든 상황을 잘 이겨낸다!</p>
+                    </div>
+                </div>
+            </li>
+            <li class="member">
+                <div class="profile" style="color:skyblue;" id="fourth-member">
+                    <img src="asset/img/hun2.jpg">
+                    <div class="profile-contents">
+                        <h2>허 훈 <span>INTJ</span></h2>
+                        <p>좋아하는 음식: 초밥<br>가고싶은 여행지: 미국 서부<br>재밌게 본 영화: 헤어질 결심<br>나의 장점: 도전하는 것을 즐긴다!</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
