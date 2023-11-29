@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홍조 : 프로젝트 소개</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="asset/css/introduce-project.css" rel="stylesheet" />
     <!-- navigation -->
     <link href="asset/css/navigation.css" rel="stylesheet" />
@@ -113,6 +113,7 @@
         })
     </script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -126,64 +127,28 @@
         <div class="sparta">
             <img
                 src="https://opening-attachments.greetinghr.com/20230131/92dd982c-4d1f-4f71-a8a9-118fe58ee915/SCC.png" />
-            <h1>스파르타 코딩클럽 대망의 첫 프로젝트</h1>
+            <div>
+                <h1>스파르타 코딩클럽</h1>
+                <h1>대망의 첫 프로젝트</h1>
+            </div>
+            
         </div>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        프로젝트의 "의의"
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        첫 프로젝트로써 앱개발 강의 수강 후 직접 만들어 보는 어쩌구 저쩌구
-                    </div>
-                </div>
+        <div class="custom-accordion">
+            <div class="custom-accordion-title" id="first">프로젝트의 "의의"</div>
+            <div class="custom-accordion-contents" name="first">
+                첫 프로젝트로써 앱개발 강의 수강 후 직접 만들어 보는 어쩌구 저쩌구
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        프로젝트 진행 중 느낀 점
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        그동안 수업을 들을 때는 주어진 코드를 복사해서 사용하였으나, 직접 코딩을 하려고 보니 어쩌구 저쩌꾸
-                    </div>
-                </div>
+        </div>
+        <div class="custom-accordion">
+            <div class="custom-accordion-title" id="second">프로젝트 진행 중 느낀 점</div>
+            <div class="custom-accordion-contents" name="second">
+                그동안 수업을 들을 때는 주어진 코드를 복사해서 사용하였으나, 직접 코딩을 하려고 보니 어쩌구 저쩌꾸
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        미흡한 점 & 보완 사항
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour">
-                        미흡한 점 & 보완 사항
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
-                    </div>
-                </div>
+        </div>
+        <div class="custom-accordion">
+            <div class="custom-accordion-title" id="third">미흡한 점 & 보완 사항</div>
+            <div class="custom-accordion-contents" name="third">
+                아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
             </div>
         </div>
     </div>
@@ -216,6 +181,9 @@
             <p>Copyright 2023. team blush. All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

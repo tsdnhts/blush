@@ -1,6 +1,6 @@
 .main {
     margin: 0px auto 0px auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 .sparta {
     display: flex;
@@ -11,4 +11,27 @@
 
 .sparta img{
     width: 350px;
+    margin-right: 120px;
+}
+.sparta h1{
+    line-height: 100%;
+}
+.custom-accordion {
+    margin-top: 30px;
+}
+
+.custom-accordion-title {
+    border: 1px solid #c1c1c1;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.custom-accordion-contents {
+    border: 1px solid #c1c1c1;
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
 }
