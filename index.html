@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Hahmlet&family=Jua&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Orbit&display=swap');
+
+        * {
+            font-family: 'Orbit', sans-serif;
+        }
+
+
+        body {
+            background-color: white;
+        }
+
+
+
+        .main {
+            width: 700px;
+            padding: 50px;
+            margin: 50px auto 50px auto;
+            box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
+        }
+
+        .comment {
+            margin: 20px auto 20px auto;
+        }
+
+
+
+        .teamname {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 50px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .teamname:hover {
+            color: rgb(242, 56, 84);
+            -webkit-text-stroke: 1px red;
+            transition: 0.3s;
+        }
+
+        .thumbnail {
+            width: 200px;
+            filter: drop-shadow(10px 6px 6px #c3c3c3);
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+        }
+
+        .article-name {
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes cursor {
+            100% {
+                border-color: transparent;
+            }
+        }
+
+        .blush {
+            font-family: 'Gaegu', sans-serif;
+            font-size: 15px;
+            width: 17ch;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .05em solid black;
+            animation: typing 3s steps(10),
+                cursor 1s steps(1) infinite;
+        }
+
+        #check-btn {
+            display: none;
+        }
+
+        #check-btn:checked~.menubars {
+            display: block;
+        }
+
+        .menubars {
+            display: none;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="main">
+
+        <div class="title">
+            <div><img class="thumbnail" src="teamphoto.png"></div>
+            <div class="comment">
+
+                <h5 class="blush">부끄러움이 많은 아이(I)들..</h5>
+                <h1 class="teamname">* 홍 조 *</h1>
+            </div>
+
+        </div>
+
+
+        <div class="teamprofile">
+
+            <input id="check-btn" type="checkbox" />
+            <label for="check-btn"> 🙈 눌러주세요 🙈 </label>
+            <ul class="menubars">
+                <div>
+                    <h3 class="rules">우리 팀의 규칙과 협업 스타일</h3>
+                    <li>기록남기기 : 대부분의 히스토리를 노션에 문서로 남기자</li>
+                    <li>공유하기 : 점심 & 저녁후 30분동안 진행상황을 공유하자</li>
+                    <li>피드백하기 : 적극적으로 피드백하여 팀원의 성장을 돕자</li>
+                    <li>물어보기 : 모르는 게 있으면 적극적으로 물어보자</li>
+                    <li>꾸준하기 : 매일 TIL을 적으며 수료까지 포기하지 않고 열심히 하자</li>
+                    <br>
+                    <br>
+    
+                    <h3 class="goal">우리 팀의 목표</h3>
+                    <li>기술적인 성장, 개발자다운 모습</li>
+                    <li>꾸준히 학습하는 습관</li>
+                    <li>개발자 네트워킹</li>
+                    <br>
+                    <br>
+    
+                    <h3 class="promise">프로젝트 기간동안 우리 팀이 지켜야할 약속</h3>
+                    <li>중간에 포기하지 않기</li>
+                    <li>식사 시간 후 30분동안 진행 상황 공유하기 (팀 회의를 통한 내용은 슬랙에 남기기)</li>
+                    <li>매일 TIL 작성하기</li>
+                    <br>
+                </div>
+            </ul>
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
