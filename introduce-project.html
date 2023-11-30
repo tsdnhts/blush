@@ -34,6 +34,10 @@
             const name = $(e.target).attr('name');
             $(`.custom-accordion-content[name=${name}]`).toggle();
         });
+
+        $('#logo').click(async function(){
+            location.href = "index.html";
+        })
     </script>
     <!-- navigation -->
     <link href="asset/css/navigation.css" rel="stylesheet" />
@@ -146,7 +150,7 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="asset/img/team-blush-logo.png" alt="로고 이미지">
+            <img class="logo" id="logo" src="asset/img/team-blush-logo.png" alt="로고 이미지">
             <div class="nav-item"><a href="index.html">팀 소개</a></div> |
             <div class="nav-item nav-item-active"><a href="introduce-project.html">프로젝트 소개</a></div> |
             <div class="nav-item"><a href="introduce-member.html">멤버 소개</a></div>

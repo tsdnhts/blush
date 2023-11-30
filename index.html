@@ -75,7 +75,7 @@
         .blush {
             font-family: 'Gaegu', sans-serif;
             font-size: 15px;
-            width: 17ch;
+            width: 19ch;
             overflow: hidden;
             white-space: nowrap;
             border-right: .05em solid black;
@@ -98,6 +98,12 @@
     <!-- navigation -->
     <link href="asset/css/navigation.css" rel="stylesheet" />
     <link href="asset/css/comment.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module">
+        $('#logo').click(async function(){
+            location.href = "index.html";
+        })
+    </script>
     <!-- comment -->
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -205,7 +211,7 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="asset/img/team-blush-logo.png" alt="로고 이미지">
+            <img class="logo" id="logo" src="asset/img/team-blush-logo.png" alt="로고 이미지">
             <div class="nav-item nav-item-active"><a href="index.html">팀 소개</a></div> |
             <div class="nav-item"><a href="introduce-project.html">프로젝트 소개</a></div> |
             <div class="nav-item"><a href="introduce-member.html">멤버 소개</a></div>
