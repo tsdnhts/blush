@@ -7,6 +7,34 @@
     <link rel="icon" href="asset/favicon/favicon.ico">
     <title>홍조 : 프로젝트 소개</title>
     <link href="asset/css/introduce-project.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <script type="module">
+        $(".custom-accordion-title span").click(function (e) {
+            if ($(e.target).text() === 'expand_more') {
+                $(e.target).text('expand_less');
+
+                const titles = $(e.target).parent('.custom-accordion-title');
+                if (titles.length > 0) {
+                    $(titles[0]).css('border-radius', '8px 8px 0px 0px');
+                }
+            }
+            else {
+                $(e.target).text('expand_more');
+
+                const titles = $(e.target).parent('.custom-accordion-title');
+                if (titles.length > 0) {
+                    $(titles[0]).css('border-radius', '8px');
+                }
+            }
+
+            const name = $(e.target).attr('name');
+            $(`.custom-accordion-content[name=${name}]`).toggle();
+        });
+    </script>
     <!-- navigation -->
     <link href="asset/css/navigation.css" rel="stylesheet" />
     <link href="asset/css/comment.css" rel="stylesheet" />
@@ -132,23 +160,41 @@
                 <h1>스파르타 코딩클럽</h1>
                 <h1>대망의 첫 프로젝트</h1>
             </div>
-            
+
         </div>
         <div class="custom-accordion">
-            <div class="custom-accordion-title" id="first">프로젝트의 "의의"</div>
-            <div class="custom-accordion-contents" name="first">
+            <div class="custom-accordion-title">
+                프로젝트의 "의의"
+                <span class="material-symbols-outlined" name="first">expand_less</span>
+            </div>
+            <div class="custom-accordion-content" name="first">
                 첫 프로젝트로써 앱개발 강의 수강 후 직접 만들어 보는 어쩌구 저쩌구
             </div>
         </div>
         <div class="custom-accordion">
-            <div class="custom-accordion-title" id="second">프로젝트 진행 중 느낀 점</div>
-            <div class="custom-accordion-contents" name="second">
+            <div class="custom-accordion-title" id="second">
+                프로젝트 진행 중 느낀 점
+                <span class="material-symbols-outlined" name="second">expand_less</span>
+            </div>
+            <div class="custom-accordion-content" name="second">
                 그동안 수업을 들을 때는 주어진 코드를 복사해서 사용하였으나, 직접 코딩을 하려고 보니 어쩌구 저쩌꾸
             </div>
         </div>
         <div class="custom-accordion">
-            <div class="custom-accordion-title" id="third">미흡한 점 & 보완 사항</div>
-            <div class="custom-accordion-contents" name="third">
+            <div class="custom-accordion-title" id="third">
+                미흡한 점 & 보완 사항
+                <span class="material-symbols-outlined" name="third">expand_less</span>
+            </div>
+            <div class="custom-accordion-content" name="third">
+                아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
+            </div>
+        </div>
+        <div class="custom-accordion">
+            <div class="custom-accordion-title" id="third">
+                TBD
+                <span class="material-symbols-outlined" name="four">expand_less</span>
+            </div>
+            <div class="custom-accordion-content" name="four">
                 아무래도 첫 프로젝트이다보니 준비해야 할 점이나 어쩌구 저쩌구
             </div>
         </div>
@@ -176,7 +222,8 @@
     </div>
     <footer>
         <div>팀명 : 홍조(team blush)</div>
-        <div>멤버 : 장준용(jyjangtop@hanmail.net), 이율(yool0417@gmail.com), 허훈(hunzz.study@gmail.com), 이용훈(elaq0625@gmail.com)</div>
+        <div>멤버 : 장준용(jyjangtop@hanmail.net), 이율(yool0417@gmail.com), 허훈(hunzz.study@gmail.com), 이용훈(elaq0625@gmail.com)
+        </div>
         <div>Copyright 2023. team blush. All Rights Reserved.</div>
     </footer>
 </body>

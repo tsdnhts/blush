@@ -22,15 +22,37 @@
 
 .custom-accordion-title {
     border: 1px solid #c1c1c1;
+    background-color: #ff9999;
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-accordion-title-expandless {
+    border: 1px solid #c1c1c1;
+    background-color: #ff9999;
     border-radius: 8px;
     width: 100%;
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.custom-accordion-contents {
-    border: 1px solid #c1c1c1;
-    border-radius: 8px;
+.custom-accordion-content {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    border-radius: 0px 0px 8px 8px;
     width: 100%;
     padding: 20px;
     font-size: 16px;
