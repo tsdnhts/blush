@@ -8,6 +8,10 @@
     min-width: fit-content;
 }
 
+.comment-content {
+    max-width: 520px;
+}
+
 .comment-row {
     display: flex;
     flex-direction: row;
