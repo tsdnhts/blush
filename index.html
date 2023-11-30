@@ -60,28 +60,7 @@
             margin-left: 50px;
         }
 
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-        }
 
-        @keyframes cursor {
-            100% {
-                border-color: transparent;
-            }
-        }
-
-        .blush {
-            font-family: 'Gaegu', sans-serif;
-            font-size: 15px;
-            width: 17ch;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: .05em solid black;
-            animation: typing 3s steps(10),
-                cursor 1s steps(1) infinite;
-        }
 
         #check-btn {
             display: none;
@@ -93,6 +72,53 @@
 
         .menubars {
             display: none;
+        }
+
+        p.typing-txt {
+            position: relative;
+            font-size: 15px;
+            width: 70px;
+            height: 15px;
+            overflow: hidden;
+            animation: typingAni 3s steps(5, end) 1;
+        }
+
+        p.typing-txt::after {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 20px;
+            height: 15px;
+            top: 0;
+            right: 0;
+            border-right: 1px solid #000;
+            animation: cursor 0.5s step-end infinite;
+        }
+
+        @keyframes typingAni {
+            0% {
+                width: 0%
+            }
+
+            100% {
+                width: 70px
+            }
+
+            ;
+        }
+
+        @keyframes cursor {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
         }
     </style>
     <!-- navigation -->
@@ -202,6 +228,7 @@
         })
     </script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -217,7 +244,11 @@
             <div><img class="thumbnail" src="asset/img/teamphoto.png"></div>
             <div class="comment">
 
-                <h5 class="blush">부끄러움이 많은 아이(I)들..</h5>
+                <div>
+                    <p>부끄러움이 많은 아이(I)들..</p>
+                </div>
+
+
                 <h1 class="teamname">* 홍 조 *</h1>
             </div>
 
@@ -275,7 +306,8 @@
     </div>
     <footer>
         <div>팀명 : 홍조(team blush)</div>
-        <div>멤버 : 장준용(jyjangtop@hanmail.net), 이율(yool0417@gmail.com), 허훈(hunzz.study@gmail.com), 이용훈(elaq0625@gmail.com)</div>
+        <div>멤버 : 장준용(jyjangtop@hanmail.net), 이율(yool0417@gmail.com), 허훈(hunzz.study@gmail.com), 이용훈(elaq0625@gmail.com)
+        </div>
         <div>Copyright 2023. team blush. All Rights Reserved.</div>
     </footer>
 </body>
