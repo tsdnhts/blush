@@ -1,11 +1,11 @@
 .comment-wrap {
     width: 700px;
+    min-width: fit-content;
     border: 1px solid #c1c1c1;
     border-radius: 8px;
     padding: 30px;
     align-items: center;
     margin: 30px auto 0px auto;
-    min-width: fit-content;
 }
 
 .comment-content {
